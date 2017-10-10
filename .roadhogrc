@@ -11,7 +11,7 @@
       "extraBabelPlugins": [
         "transform-runtime"
       ],
-      "publicPath": "/yuedan"
+      "publicPath": "/yuedan/"
     }
   }
 }
