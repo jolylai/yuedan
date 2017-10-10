@@ -10,8 +10,7 @@
     "production": {
       "extraBabelPlugins": [
         "transform-runtime"
-      ],
-      "publicPath": "yuedan/static/"
+      ]
     }
   }
 }
