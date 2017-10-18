@@ -8,7 +8,7 @@ const FormItem = Form.Item;
 const Login = ({
   form: {
     getFieldDecorator,
-    getFieldValue,
+  getFieldValue,
   },
 }) => {
   const handleLogin = () => {
