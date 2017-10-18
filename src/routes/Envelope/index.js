@@ -22,7 +22,7 @@ class Envelope extends Component {
   render() {
     const { content } = this.state;
     return (
-      <div className={styles.envelope}>
+      <div id="envelope" className={styles.envelope}>
         <div className={styles.main} id="content">{content}</div>
       </div>
     );
