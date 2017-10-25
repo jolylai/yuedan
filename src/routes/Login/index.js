@@ -35,7 +35,7 @@ const Login = ({
         <FormItem>
           <Button type="primary" style={{ width: '100%' }} onClick={handleLogin}>登录</Button>
         </FormItem>
-        <Link style={{ display: 'none' }} to="/envelope" id="loginSuccess">Login</Link>
+        <Link style={{ display: 'none' }} to="/home" id="loginSuccess">Login</Link>
       </Form>
     </div>
   );
