@@ -1,13 +1,13 @@
 import React from 'react';
-
+import { Button } from 'antd';
 import styles from './Header.less';
 
 const Header = () => {
   return (
-    <ul className={styles.headerUl}>
-      <li>心历路程</li>
-      <li>陪你环游世界</li>
-    </ul>
+    <div className={styles.header}>
+      <span className='header-avatar' />
+      <Button className='header-login' type='primary'>Login</Button>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Layout/Header';
+import styles from './index.less'
 
 const Home = () => {
   return (
-    <div>
-      <Header />
+    <div className={styles.home}>
+      <div className='home-bg-top' />
     </div>
   );
 };

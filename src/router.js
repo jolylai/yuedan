@@ -1,21 +1,39 @@
 import React from 'react';
-import { Router, Route } from 'dva/router';
-import IndexPage from './routes/IndexPage';
-import Envelope from './routes/Envelope/';
-import Login from './routes/Login';
-import Home from './routes/Home/';
-import IndexForm from './routes/Form/index';
+import { Switch, Route, Redirect, routerRedux } from 'dva/router'
+import dynamic from 'dva/dynamic'
+import App from './routes/App'
 
-function RouterConfig({ history }) {
+const { ConnectedRouter } = routerRedux
+
+const Routers = function( { history, app}) {
+  const routes = [
+    {
+      path: '/home',
+      component: () => import('./routes/Home/')
+    }
+  ]
+
   return (
-    <Router history={history}>
-      <Route path="/" component={Login} />
-      <Route path="/home" component={Home} />
-      <Route path="/envelope" component={Envelope} />
-      <Route path="/indexform" component={IndexForm} />
-      <Route path="/test" component={IndexPage} />
-    </Router>
-  );
+    <ConnectedRouter history={history}>
+      <App>
+        <Switch>
+        {
+          routes.map(({ path, ...dynamics }, key) => (
+            <Route key={key}
+              exact
+              path={path}
+              component={dynamic({
+                app,
+                ...dynamics,
+              })}
+            />
+          ))
+        }
+        </Switch>
+      </App>
+    </ConnectedRouter>
+  )
 }
 
-export default RouterConfig;
+export default Routers;
+
