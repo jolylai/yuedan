@@ -5,10 +5,10 @@ import App from './routes/App'
 
 const { ConnectedRouter } = routerRedux
 
-const Routers = function( { history, app}) {
+const Routers = function ({ history, app }) {
   const routes = [
     {
-      path: '/home',
+      path: '/',
       component: () => import('./routes/Home/')
     }
   ]
@@ -17,18 +17,18 @@ const Routers = function( { history, app}) {
     <ConnectedRouter history={history}>
       <App>
         <Switch>
-        {
-          routes.map(({ path, ...dynamics }, key) => (
-            <Route key={key}
-              exact
-              path={path}
-              component={dynamic({
-                app,
-                ...dynamics,
-              })}
-            />
-          ))
-        }
+          {
+            routes.map(({ path, ...dynamics }, key) => (
+              <Route key={key}
+                exact
+                path={path}
+                component={dynamic({
+                  app,
+                  ...dynamics,
+                })}
+              />
+            ))
+          }
         </Switch>
       </App>
     </ConnectedRouter>

@@ -1,5 +1,6 @@
 module.exports = {
   "entry": "src/index.js",
+  theme: "./theme.config.js",
   "env": {
     "development": {
       "extraBabelPlugins": [

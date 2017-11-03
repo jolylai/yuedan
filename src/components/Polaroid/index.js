@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card } from 'antd';
 import styles from './index.less';
 
 class Polaroid extends Component {
@@ -8,13 +9,14 @@ class Polaroid extends Component {
   }
 
   render() {
-    const { label, imgSrc } = this.props;
+    const { label, imgKey } = this.props;
     return (
       <div ref={(polaroid) => { this.polaroid = polaroid }} className={styles.polaroid}>
-        <div className="polaroid-img">
-          <img src={require('../../assets/images/girl1.jpg')} alt="img" />
-        </div>
-        <span>{label}</span>
+        <Card style={{ height: '100%' }} bodyStyle={{ padding: 0, height: '100%'}}>
+          <div className="polaroid-img">
+            <img src={imgKey ? require(`../../assets/images/${imgKey}.jpg`) : require(`../../assets/images/girl1.jpg`)} alt="img" />
+          </div>
+        </Card>
       </div>
     );
   }
