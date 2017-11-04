@@ -6,8 +6,8 @@ const HomeCard = () => {
     <div className={styles.homecard}>
       <div className='homecard-avatar' />
       <div className='homecard-word'>
-        <div>To My Girlfriend</div>
-        <div>I Love You Forever</div>
+        <div>Let's write dowm our daily life</div>
+        <div>This website is write to my girlfriend YuedanLin</div>
       </div>
     </div>
   );

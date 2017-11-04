@@ -8,15 +8,15 @@ import styles from './index.less'
 
 const Home = () => {
   const colProps = {
-    lg: {
-      span: 6,
+    md: {
+      span: 10,
       offset: 10
     },
-    md: 24
+    sm: 24
   }
   const colProps2 = {
-    lg: 4,
-    md: 24
+    md: 4,
+    sm: 24
   }
   return (
     <div className={styles.home}>
@@ -28,7 +28,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Row style={{ marginTop: '3em'}} type="flex" justify="end">
+      <Row style={{ marginTop: '3em' }} type="flex" justify="end">
         <Col {...colProps2}>
           <Polaroid imgName='girl1' />
         </Col>
