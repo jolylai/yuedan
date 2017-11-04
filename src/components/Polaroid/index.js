@@ -9,12 +9,12 @@ class Polaroid extends Component {
   }
 
   render() {
-    const { label, imgKey } = this.props;
+    const { label, imgName } = this.props;
     return (
       <div ref={(polaroid) => { this.polaroid = polaroid }} className={styles.polaroid}>
-        <Card style={{ height: '100%' }} bodyStyle={{ padding: 0, height: '100%'}}>
+        <Card style={{ height: '100%' }} bodyStyle={{ padding: 0, height: '100%' }}>
           <div className="polaroid-img">
-            <img src={imgKey ? require(`../../assets/images/${imgKey}.jpg`) : require(`../../assets/images/girl1.jpg`)} alt="img" />
+            <img src={imgName ? require(`../../assets/images/${imgName}.jpg`) : require(`../../assets/images/girl1.jpg`)} alt="img" />
           </div>
         </Card>
       </div>

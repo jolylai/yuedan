@@ -5,6 +5,7 @@ import styles from './index.less'
 const HomeNavBar = () => {
   return (
     <div className={styles.homeNavBar}>
+      <Link to='/'>Home</Link>
       <Link to='/letters'>Letters</Link>
       <Link to='/journey'>Journey</Link>
     </div>
