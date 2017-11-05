@@ -10,6 +10,9 @@ const Routers = function ({ history, app }) {
     {
       path: '/',
       component: () => import('./routes/Home/')
+    }, {
+      path: '/letters',
+      component: ()=> import('./routes/Letters/')
     }
   ]
 

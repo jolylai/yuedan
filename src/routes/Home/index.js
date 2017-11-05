@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import HomeCard from './components/HomeCard'
-import HomeNavBar from './components/HomeNavBar'
 import Polaroid from '../../components/Polaroid'
 
 import styles from './index.less'
@@ -24,7 +23,6 @@ const Home = () => {
         <Col {...colProps} >
           <div className='home-containar'>
             <HomeCard />
-            {/*<HomeNavBar />*/}
           </div>
         </Col>
       </Row>
