@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import LettersCard from '../../components/LettersCard';
+import styles from './index.less';
 
 const letterList = [
   {
@@ -19,14 +20,14 @@ const letterList = [
 const Letters = () => {
   const renderLetterList = () => {
     const colProps = {
-      md: 6,
+      md: 24,
       sm: 12
     }
     return letterList.map((item, index) => {
       return (
         <Col key={index} {...colProps}>
           <LettersCard
-            title={item.title} 
+            title={item.title}
             summary={item.summary}
             imgName={item.imgName}
             linkTo={item.linkTo}
@@ -36,7 +37,7 @@ const Letters = () => {
     })
   }
   return (
-    <div>
+    <div className={styles.letters}>
       <Row>
         {renderLetterList()}
       </Row>
