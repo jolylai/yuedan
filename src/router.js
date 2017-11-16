@@ -12,7 +12,13 @@ const Routers = function ({ history, app }) {
       component: () => import('./routes/Home/')
     }, {
       path: '/letters',
-      component: ()=> import('./routes/Letters/')
+      component: () => import('./routes/Letters/')
+    }, {
+      path: '/letters/:tag',
+      component: () => import('./routes/Letters/detail')
+    }, {
+      path: '/journey',
+      component: () => import('./routes/Journey/')
     }
   ]
 

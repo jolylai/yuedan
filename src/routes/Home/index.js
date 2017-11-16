@@ -22,30 +22,30 @@ const Home = () => {
       <Row>
         <Col {...colProps} >
           <div className='home-containar'>
-            <HomeCard />
+            Our Photo Wall
           </div>
-        </Col>
-      </Row>
-      <Row style={{ marginTop: '3em' }} type="flex" justify="end">
-        <Col {...colProps2}>
-          <Polaroid imgName='girl1' />
-        </Col>
-        <Col {...colProps2}>
-          <Polaroid imgName='girl2' />
-        </Col>
-        <Col {...colProps2}>
-          <Polaroid imgName='girl3' />
         </Col>
       </Row>
       <Row type="flex" justify="end">
         <Col {...colProps2}>
-          <Polaroid imgName='girl4' />
+          <Polaroid imgName='yay' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='girl5' />
+          <Polaroid imgName='yay' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='girl6' />
+          <Polaroid imgName='yay' />
+        </Col>
+      </Row>
+      <Row type="flex" justify="end">
+        <Col {...colProps2}>
+          <Polaroid imgName='yay' />
+        </Col>
+        <Col {...colProps2}>
+          <Polaroid imgName='yay' />
+        </Col>
+        <Col {...colProps2}>
+          <Polaroid imgName='yay' />
         </Col>
       </Row>
     </div>

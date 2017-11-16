@@ -1,4 +1,5 @@
 import dva from 'dva';
+import 'moment/locale/zh-cn';
 import './index.css';
 
 // 1. Initialize

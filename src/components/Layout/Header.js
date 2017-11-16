@@ -8,6 +8,7 @@ class Header extends React.Component {
   state = {
     activeKey: 1
   }
+
   isActive = (e) => {
     const activeKey = Number(e.target.dataset.key)
     this.setState({
@@ -16,14 +17,6 @@ class Header extends React.Component {
   }
   render() {
     const { activeKey } = this.state
-    const colAvatar = {
-      md: {
-        span: 5
-      },
-      sm: {
-        span: 24
-      }
-    }
     const colNav = {
       md: {
         span: 2,
@@ -33,21 +26,21 @@ class Header extends React.Component {
       }
     }
     return (
-      <Row className={styles.header}>
-        <Col {...colAvatar}>
-          <span className='header-avatar' />
-          <span className='header-name'>YuedanLin</span>
-        </Col>
-        <Col {...colNav}>
-          <Link data-key={1} onClick={this.isActive} className={activeKey === 1 ? 'isActive' : ''} to='/'>Home</Link>
-        </Col>
-        <Col {...colNav}>
-          <Link data-key={2} onClick={this.isActive} className={activeKey === 2 ? 'isActive' : ''} to='/letters'>Letters</Link>
-        </Col>
-        <Col {...colNav}>
-          <Link data-key={3} onClick={this.isActive} className={activeKey === 3 ? 'isActive' : ''} to='/journey'>Journey</Link>
-        </Col>
-      </Row>
+      <div className={styles.header}>
+        <Row className='header-row' type='flex' justify='center'>
+          <Col {...colNav}>
+            <Link data-key={2} onClick={this.isActive} className={activeKey === 2 ? 'isActive' : ''} to='/letters'>Letters</Link>
+          </Col>
+          <Col {...colNav}>
+            <Link className='header-avatar-link' to='/' data-key={1} onClick={this.isActive}>
+              <span className='header-avatar' />
+            </Link>
+          </Col>
+          <Col {...colNav}>
+            <Link data-key={3} onClick={this.isActive} className={activeKey === 3 ? 'isActive' : ''} to='/journey'>Journey</Link>
+          </Col>
+        </Row>
+      </div>
     );
   }
 };
