@@ -1,0 +1,1 @@
+webpackJsonp([3],{584:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var r=u(4),o=n(r),a=u(620),f=n(a),l=function(){return o.default.createElement("div",{className:f.default.journey},"Journey")};t.default=l,e.exports=t.default},620:function(e,t){e.exports={journey:"journey___bN70_"}}});

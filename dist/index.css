@@ -5914,27 +5914,28 @@ samp {
   }
 }
 .header___zKVUf {
-  background-color: rgba(250, 250, 250, 0.3);
+  border-top: 3px solid #c05b4d;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header___zKVUf .header-row {
+  width: 100vw;
 }
 .header___zKVUf .header-avatar {
-  width: 50px;
-  height: 50px;
-  margin: .2em 1em;
+  width: 80px;
+  height: 80px;
   display: inline-block;
+  position: absolute;
   border-radius: 50%;
   -webkit-transform: rotate(25deg);
       -ms-transform: rotate(25deg);
           transform: rotate(25deg);
-  background-image: url(/yuedan/static/touxiang.d83c3b7d.jpg);
+  background-image: url(/yuedan/static/yay.44dd3333.jpg);
   background-size: cover;
 }
-.header___zKVUf .header-name {
-  top: -0.6em;
-  position: relative;
-  line-height: 25px;
-  font-weight: bold;
-  font-size: 2em;
-  color: skyblue;
+.header___zKVUf .header-avatar-link {
+  min-width: 100px;
 }
 .header___zKVUf .isActive {
   background-position: center;
@@ -5944,7 +5945,7 @@ samp {
 }
 .header___zKVUf a {
   text-decoration: none;
-  padding: .6em;
+  padding: 10px;
   font-size: 2em;
   font-weight: bold;
   display: inline-block;
@@ -5973,6 +5974,11 @@ samp {
 }
 body {
   font-family: regular-italic, semibold, cblockbold, Bariol, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+.app {
+  height: 100vh;
 }
 .homecard___2h3Q0 .homecard-avatar {
   height: 80px;
@@ -5981,7 +5987,7 @@ body {
   margin-left: 40%;
   border-radius: 50%;
   background-size: cover;
-  background-image: url(/yuedan/static/we.98f6c678.jpg);
+  background-image: url(/yuedan/static/yay.44dd3333.jpg);
 }
 .homecard___2h3Q0 .homecard-word {
   color: #0AAFC4;
@@ -5991,21 +5997,6 @@ body {
   margin-top: 20px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-}
-.homeNavBar___vRvYY {
-  color: white;
-  padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.homeNavBar___vRvYY a:link {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid white;
-  margin-right: 20px;
-  list-style: none;
 }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
@@ -6201,12 +6192,70 @@ body {
   width: 100%;
   height: 100%;
 }
+.home___1idYD {
+  min-height: 100vh;
+  background-image: url(/yuedan/static/arrow.d7724832.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home___1idYD .home-containar {
+  margin-top: 116px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
 .home___1idYD .home-polaroid {
   margin-left: 40%;
 }
-body {
-  margin: 0;
-  background-image: url(/yuedan/static/arrow.d7724832.jpg);
+.letters___URzzC {
+  min-height: 100vh;
+  color: black;
+  background-image: url(/yuedan/static/books.d6ab77d6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardImg___3PJiS {
+  width: 100%;
+}
+.cardImg___3PJiS img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cardContent___2GrlA {
+  color: black;
+  padding: 1em 2em;
+}
+.cardContent___2GrlA p {
+  min-height: 2.6em;
+}
+.cardContent___2GrlA .updateTime {
+  float: right;
+}
+.letterDetail___3aNWz {
+  min-height: 100vh;
+  padding: 4em;
+  padding-top: 156px;
+  color: black;
+  background-image: url(/yuedan/static/books.d6ab77d6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content___1iTtD {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  padding: 2em 1em;
+  background-color: rgba(250, 250, 250, 0.8);
+  text-indent: 2em;
+}
+.content___1iTtD p:last-child {
+  float: right;
+}
+.journey___bN70_ {
+  color: white;
+  height: 100vh;
+  background-image: url(/yuedan/static/books.d6ab77d6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
