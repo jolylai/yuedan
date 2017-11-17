@@ -28,10 +28,10 @@ const Home = () => {
       </Row>
       <Row type="flex" justify="end">
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='flower' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='arrow' />
         </Col>
         <Col {...colProps2}>
           <Polaroid imgName='yay' />

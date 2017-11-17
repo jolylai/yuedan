@@ -13,12 +13,13 @@ const letterList = [
     linkTo: '171018',
     updatedAt: "2017-10-18T08:05:36.350Z"
   },
-  //  {
-  //   title: '苏州',
-  //   summary: '苏州之旅',
-  //   imgName: 'flower',
-  //   linkTo: 'suzhou'
-  // }
+  {
+    title: '恩',
+    summary: 'Last chance',
+    imgName: 'flower',
+    linkTo: '171117',
+    updatedAt: "2017-11-17 16:18:18"
+  }
 ]
 
 const Letters = () => {
@@ -50,8 +51,8 @@ const Letters = () => {
 
   return (
     <div className={styles.letters}>
-      <div style={{ height: 56 }} />
-      <Row>
+      <div />
+      <Row gutter={16} style={{ paddingTop: 126, margin: 0 }}>
         {renderLetterList()}
       </Row>
     </div>

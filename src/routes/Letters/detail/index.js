@@ -7,9 +7,17 @@ const LetterDetail = () => {
   const letter = require(`../Drawer/${tag}`)
 
   const renderLetter = () => {
-    return letter.map((item, index) => {
-      return <p key={index}>{item}</p>
-    })
+    const content = []
+    for (let key in letter) {
+      if (key === 'title') {
+        content.push(<h2 style={{ textAlign: 'center' }}>{letter[key]}</h2>)
+      } else if (key === 'publishAt') {
+        content.push(<div style={{ textAlign: 'right' }}>{letter[key]}</div>)
+      } else {
+        content.push(<p>{letter[key]}</p>)
+      }
+    }
+    return content
   }
   return (
     <div className={styles.letterDetail}>
