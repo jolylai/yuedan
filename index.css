@@ -5928,10 +5928,7 @@ samp {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  -webkit-transform: rotate(25deg);
-      -ms-transform: rotate(25deg);
-          transform: rotate(25deg);
-  background-image: url(/yuedan/static/yay.44dd3333.jpg);
+  background-image: url(/yuedan/static/avatar.ab08be89.jpg);
   background-size: cover;
 }
 .header___zKVUf .header-avatar-link {
@@ -6002,6 +5999,7 @@ body {
   margin: 20px;
   width: 100%;
   max-width: 200px;
+  max-height: 260px;
   color: #0aafc4;
   display: inline-block;
 }
