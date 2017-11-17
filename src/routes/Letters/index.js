@@ -13,13 +13,13 @@ const letterList = [
     linkTo: '171018',
     updatedAt: "2017-10-18T08:05:36.350Z"
   },
-  {
-    title: '恩',
-    summary: 'Last chance',
-    imgName: 'flower',
-    linkTo: '171117',
-    updatedAt: "2017-11-17 16:18:18"
-  }
+  // {
+  //   title: '恩',
+  //   summary: 'Last chance',
+  //   imgName: 'flower',
+  //   linkTo: '171117',
+  //   updatedAt: "2017-11-17 16:18:18"
+  // }
 ]
 
 const Letters = () => {

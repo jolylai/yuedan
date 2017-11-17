@@ -14,7 +14,7 @@ const Home = () => {
     sm: 24
   }
   const colProps2 = {
-    md: 4,
+    md: 5,
     sm: 24
   }
   return (
@@ -28,24 +28,24 @@ const Home = () => {
       </Row>
       <Row type="flex" justify="end">
         <Col {...colProps2}>
-          <Polaroid imgName='flower' />
+          <Polaroid imgName='we1' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='arrow' />
+          <Polaroid imgName='we2' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='we3' />
         </Col>
       </Row>
       <Row type="flex" justify="end">
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='we4' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='we5' />
         </Col>
         <Col {...colProps2}>
-          <Polaroid imgName='yay' />
+          <Polaroid imgName='we6' />
         </Col>
       </Row>
     </div>
