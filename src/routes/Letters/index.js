@@ -1,26 +1,9 @@
 import React from 'react';
 import { Row, Col, Card } from 'antd';
 import moment from 'moment';
-// import LettersCard from '../../components/LettersCard';
+import letterList from './letterList';
 import styles from './index.less';
 import { Link } from 'dva/router';
-
-const letterList = [
-  {
-    title: '湖南',
-    summary: '你和慧婷的湖南之行',
-    imgName: 'arrow',
-    linkTo: '171018',
-    updatedAt: "2017-10-18T08:05:36.350Z"
-  },
-  // {
-  //   title: '恩',
-  //   summary: 'Last chance',
-  //   imgName: 'flower',
-  //   linkTo: '171117',
-  //   updatedAt: "2017-11-17 16:18:18"
-  // }
-]
 
 const Letters = () => {
   const renderLetterList = () => {

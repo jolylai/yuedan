@@ -7,14 +7,11 @@ import styles from './index.less'
 
 const Home = () => {
   const colProps = {
-    md: {
-      span: 10,
-      offset: 10
-    },
+    md: 24,
     sm: 24
   }
   const colProps2 = {
-    md: 5,
+    md: 6,
     sm: 24
   }
   return (
@@ -26,7 +23,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Row type="flex" justify="end">
+      <Row gutter={26} style={{ margin: 0, padding: 0 }}>
         <Col {...colProps2}>
           <Polaroid imgName='we1' />
         </Col>
@@ -36,8 +33,6 @@ const Home = () => {
         <Col {...colProps2}>
           <Polaroid imgName='we3' />
         </Col>
-      </Row>
-      <Row type="flex" justify="end">
         <Col {...colProps2}>
           <Polaroid imgName='we4' />
         </Col>
@@ -46,6 +41,12 @@ const Home = () => {
         </Col>
         <Col {...colProps2}>
           <Polaroid imgName='we6' />
+        </Col>
+        <Col {...colProps2}>
+          <Polaroid imgName='me1' />
+        </Col>
+        <Col {...colProps2}>
+          <Polaroid imgName='me2' />
         </Col>
       </Row>
     </div>

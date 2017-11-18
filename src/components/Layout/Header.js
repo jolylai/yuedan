@@ -27,7 +27,7 @@ class Header extends React.Component {
     }
     return (
       <div className={styles.header}>
-        <Row className='header-row' type='flex' justify='center'>
+        <Row className='header-row' type='flex' justify='center' style={{ margin: 0 }}>
           <Col {...colNav}>
             <Link data-key={2} onClick={this.isActive} className={activeKey === 2 ? 'isActive' : ''} to='/letters'>Letters</Link>
           </Col>

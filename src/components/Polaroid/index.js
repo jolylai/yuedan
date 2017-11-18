@@ -7,7 +7,7 @@ class Polaroid extends Component {
   }
   componentDidMount() {
     const _polaroid = this.polaroid, polaroidImg = this.polaroidImg;
-    _polaroid.style.transform = `rotate(${Math.random() > 0.5 ? '-' : ''}${Math.random() * 16 + 'deg'})`;
+    _polaroid.style.transform = `rotate(${Math.random() > 0.5 ? '-' : ''}${Math.random() * 10 + 'deg'})`;
   }
 
   render() {
