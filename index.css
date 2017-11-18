@@ -5923,8 +5923,8 @@ samp {
   width: 100vw;
 }
 .header___zKVUf .header-avatar {
-  width: 80px;
-  height: 80px;
+  width: 84px;
+  height: 84px;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
@@ -6037,18 +6037,18 @@ body {
   height: 100%;
 }
 .polaroid___3VOCy .polaroid-img:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transform-origin: center top;
       -ms-transform-origin: center top;
           transform-origin: center top;
 }
 .home___1idYD {
   min-height: 100vh;
-  background-image: url(/yuedan/static/arrow.d7724832.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-width: 100vw;
+  padding-bottom: 90px;
+  background-color: #1D9E74;
 }
 .home___1idYD .home-containar {
   margin-top: 116px;
