@@ -11,6 +11,12 @@ export default [
     imgName: 'letter2',
     linkTo: '171116',
     updatedAt: '2017-11-16 02:52:00'
+  }, {
+    title: 'Thanks Giving Day',
+    summary: 'Write this to you in Thianks Giving Day.',
+    imgName: 'girl1',
+    linkTo: '171123',
+    updatedAt: '2017-11-23 20:18:00'
   }
   // {
   //   title: '恩',
