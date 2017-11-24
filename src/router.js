@@ -11,6 +11,9 @@ const Routers = function ({ history, app }) {
       path: '/',
       component: () => import('./routes/Home/')
     }, {
+      path: '/photos',
+      component: () => import('./routes/Photos/')
+    }, {
       path: '/letters',
       component: () => import('./routes/Letters/')
     }, {

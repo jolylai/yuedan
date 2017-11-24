@@ -1,19 +1,28 @@
-@import '../../utils/utils.less';
 .home {
-    min-height: 100vh;
-    min-width: 100vw;
-    padding-bottom: 90px; // .bgImg('arrow');
-    background-color: #1D9E74;
-     :global {
-        .home-containar {
-            margin-top: 116px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        .home-polaroid {
-            margin-left: 40%;
-        }
-    }
+    width: 85%;
+    min-height: 85vh;
+    top: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    border: 1px solid #c1c0bd;
+    background-color: beige;
+    font-family: 'Patrick Hand SC', sans-serif;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url('../../assets/images/avatar.jpg');
+    background-size: cover;
+    background-position: 0 -12px;
+}
+
+.btnList {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }

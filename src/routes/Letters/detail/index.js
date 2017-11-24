@@ -23,9 +23,10 @@ const LetterDetail = () => {
   }
   return (
     <div className={styles.letterDetail}>
-      <div className={styles.content}>
+      <button className={styles.content}>
         {renderLetter()}
-      </div>
+        <p style={{ float: 'right' }}>Write by your boyfriend Guolin Lai</p>
+      </button>
     </div>
   );
 };
