@@ -22,6 +22,9 @@ const Routers = function ({ history, app }) {
     }, {
       path: '/journey',
       component: () => import('./routes/Journey/')
+    }, {
+      path: '/ourpromise',
+      component: () => import('./routes/OurPromise/')
     }
   ]
 

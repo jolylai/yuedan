@@ -1,4 +1,5 @@
 import React from 'react';
+import debounce from 'lodash.debounce';
 import { withRouter, Link } from 'dva/router'
 import './App.less'
 
@@ -8,6 +9,22 @@ const App = ({
   const backBtn = () => {
     history.back()
   }
+  const getScrollTop = () => {
+    let scrollTop = 0;
+    if (document.documentElement && document.documentElement.scrollTop) {
+      scrollTop = document.documentElement.scrollTop;
+    }
+    else if (document.body) {
+      scrollTop = document.body.scrollTop;
+    }
+    return scrollTop;
+  }
+  const isShowBackBtn = () => {
+    const app = document.querySelector('.app')
+    const top = getScrollTop()
+    console.log('top', top);
+  }
+  document.addEventListener('wheel', debounce(isShowBackBtn, 800));
   return (
     <div className='app'>
       {children}
